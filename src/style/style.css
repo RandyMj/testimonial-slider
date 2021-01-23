@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.text-container {
+    width: 50vw;
+    height: 100vh;
+    font-family: 'Inter', 'Sans serif';
+    background-image: url('../images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.text-container .text-pos {
+    width: 650px;
+    height: 350px;
+    position: absolute;
+    top: 32.5%;
+    left: 16.5%;
+    z-index: 10;
+}
+.text-container .text-pos p {
+    font-size: 32px;
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+    background-image: url('../images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.text-container .text-pos .name {
+    font-size: 20px;
+    color: hsl(240, 38%, 20%);
+    font-weight: 500;
+}
+.text-container .text-pos .prof {
+    color: hsl(240, 18%, 77%);
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+
+/* ----------------------------------------- */
+.image-side {
+    width: 50vw;
+    height: 100vh;
+}
+.image-side .image-pos {
+    width: 100%;
+    height: 90%;
+    background-image: url('../images/pattern-bg.svg');
+    background-repeat: no-repeat;
+    margin: 30px auto;
+    position: relative;
+}
+.image-side .image-pos img {
+    margin-top: 65.5px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 35px 30px 0px rgba(50, 50, 50, 0.4);
+}
+
+/* ---------------------------------------- */
+.image-side .image-pos .buttons button:hover {
+    cursor: pointer;
+}
+.image-side .image-pos .buttons button {
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+.image-side .image-pos .buttons .prev {
+    border-radius: 50% 0 0 50%;
+}
+.image-side .image-pos .buttons .next {
+    border-radius: 0 50% 50% 0;
+}
+.image-side .image-pos .buttons button img {
+    margin: 0;
+}
+
+.image-side .image-pos .buttons {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+}
