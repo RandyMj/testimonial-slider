@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
-.text-container .text-pos {
+.text-container .text-pos, .text-pos2 {
     width: 650px;
     height: 350px;
     position: absolute;
@@ -24,7 +24,13 @@ body {
     left: 16.5%;
     z-index: 10;
 }
-.text-container .text-pos p {
+.text-container .text-pos {
+    display: block;
+}
+.text-container .text-pos2 {
+    display: none;
+}
+.text-container p {
     font-size: 32px;
     font-weight: 300;
     color: hsl(240, 38%, 20%);
@@ -32,12 +38,12 @@ body {
     background-repeat: no-repeat;
     margin-bottom: 30px;
 }
-.text-container .text-pos .name {
+.text-container .name {
     font-size: 20px;
     color: hsl(240, 38%, 20%);
     font-weight: 500;
 }
-.text-container .text-pos .prof {
+.text-container .prof {
     color: hsl(240, 18%, 77%);
     font-weight: 300;
     margin-left: 10px;
@@ -62,6 +68,12 @@ body {
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: 0px 35px 30px 0px rgba(50, 50, 50, 0.4);
+}
+.image-side .image-pos .first-char {
+    display: inline;
+}
+.image-side .image-pos .second-char {
+    display: none;
 }
 
 /* ---------------------------------------- */
